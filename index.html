@@ -37,12 +37,17 @@
       
       return highlightedWord;
     }
+
+    function refreshInput() {
+      var inputBox = document.getElementById('inputBox');
+      inputBox.value = "";
+    }
   </script>
 </head>
 <body>
-  <label for="inputBox">Write a Paragraph:</label><br>
+  <label for="inputBox">Paragraph:</label><br>
   <textarea id="inputBox" rows="5" cols="50"></textarea><br><br>
-  <div> Select a word and click the Censor button </div>
-  <button onclick="highlightWord()">Censor</button>
-</body>    
+  <button onclick="highlightWord()">Highlight Word</button>
+  <button onclick="refreshInput()">Refresh</button>
+</body>
 </html>
