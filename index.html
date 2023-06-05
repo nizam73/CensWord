@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Word Highlighter</title>
+  <title>CensWord</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <label for="inputBox">Paragraph:</label><br>
-  <textarea id="inputBox" rows="5" cols="50"></textarea><br><br>
-  <button id="highlightButton">Highlight Word</button>
-  <button id="refreshButton">Refresh</button>
+	<div class="container" style="width: 300px;">
+	
+	
+		<div>
+			<div class="align-left" ><label for="inputBox">Write a Sentence</label>
+				</div>
+			<div class="align-right"><button id="refreshButton" class="refresh-button">Refresh</button>
+				</div>
+		</div></br></br>
+		
+		
+		<textarea id="inputBox" rows="5" style="width: 100%;" class="inputBox" ></textarea><br><br>
+		
+		<button id="highlightButton" class="censor-button">Censor</button>
+	</div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
